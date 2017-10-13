@@ -2,6 +2,7 @@
 html {
   font-size: 16px;
   font-family: "helvetica", sans-serif;
+  line-height: 1rem;
 }
 
 div, nav {
@@ -10,24 +11,28 @@ div, nav {
 
 .flex {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.container {
+/**.container {
   width: 100%;
+} **/
+
+h1, h2, h3 {
+  font-weight: bold;
 }
 
 /** Header **/
 header {
   position: fixed;
   z-index: 1;
-  height: 4rem;
   width: 100%;
+  flex: 1;
 }
 
 header .flex {
   justify-content: space-between;
+  height: 4rem;
 }
 
 header .logo {
@@ -36,14 +41,53 @@ header .logo {
 }
 
 header nav {
-  padding: 1rem 1.5rem;
+  padding-right: 1.5rem;
 }
 
 header nav li {
   display: inline-block;
   padding-left: 1rem;
 }
+
 /** Introduction Banner **/
+.intro {
+  position: relative;
+  padding-top: 4rem;
+}
+
+.intro img {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.intro .text {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 1rem;
+  width: 28%;
+}
+
+.intro .text div {
+  padding-bottom: 1.5rem;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.intro h3 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.intro .text .button {
+  background-color: gray;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0 0.5rem 0;
+}
 
 /** Information Section **/
 
