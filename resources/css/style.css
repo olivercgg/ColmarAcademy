@@ -1,8 +1,12 @@
 /** Universal **/
 html {
   font-size: 16px;
+}
+
+body {
   font-family: "helvetica", sans-serif;
   line-height: 1rem;
+  background-color: rgb(255, 255, 255);
 }
 
 div, nav {
@@ -49,6 +53,10 @@ img, video {
   width: 40%;
 }
 
+.text {
+  padding: 1rem;
+}
+
 /** Header **/
 header {
   position: fixed;
@@ -89,12 +97,11 @@ header nav li {
 }
 
 .intro .text {
-  padding-left: 1rem;
   padding-right: 4rem;
 }
 
 .intro .right-column .button {
-  background-color: gray;
+  background-color: rgb(127, 127, 127);
   color: white;
   width: 100%;
   text-align: center;
@@ -108,7 +115,11 @@ header nav li {
 }
 
 .info .left-column .text {
-  padding-top: 2rem;
+  padding: 2rem 0 0 0;
+}
+
+.info .left-column p {
+  padding-bottom: 1.5rem;
 }
 
 .detail img {
@@ -118,10 +129,40 @@ header nav li {
 
 .detail .text {
   width: 65%;
-  padding-left: 1rem;
 }
-/** Course Section **/
 
+/** Course Section **/
+.course-section {
+  background-color: rgba(222, 222, 222, 0.8);
+}
+
+.course-section h2 {
+  text-align: center;
+  padding: 2rem 0 0 0;
+}
+
+.course-container {
+  padding: 1rem 3.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course {
+  width: 29%;
+  height: 18rem;
+  margin: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.course img {
+  display: block;
+  height: auto;
+}
+
+.course .text h3,
+.course .text p  {
+  padding-bottom: 0.5rem;
+}
 /** Thesis Section **/
 
 /** Footer **/
