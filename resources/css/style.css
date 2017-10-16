@@ -51,10 +51,16 @@ img, video {
 
 .right-column {
   width: 40%;
+  align-items: flex-start;
+  padding-top: 1rem;
 }
 
 .text {
   padding: 1rem;
+}
+
+.info, .thesis-container {
+  align-items: flex-start;
 }
 
 /** Header **/
@@ -91,11 +97,6 @@ header nav li {
   padding-top: 4rem;
 }
 
-.intro .right-column {
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .intro .text {
   padding-right: 4rem;
 }
@@ -110,11 +111,7 @@ header nav li {
 }
 
 /** Information Section **/
-.info {
-  align-items: flex-start;
-}
-
-.info .left-column .text {
+.left-column .text {
   padding: 2rem 0 0 0;
 }
 
@@ -136,7 +133,7 @@ header nav li {
   background-color: rgba(222, 222, 222, 0.8);
 }
 
-.course-section h2 {
+.course-section h2, .thesis h2 {
   text-align: center;
   padding: 2rem 0 0 0;
 }
@@ -163,6 +160,14 @@ header nav li {
 .course .text p  {
   padding-bottom: 0.5rem;
 }
-/** Thesis Section **/
+/** Thesis Section
 
+Code inherited from class selectors used above. **/
+.thesis h2 {
+  padding-bottom: 1rem;
+}
+
+.thesis .text {
+  padding-top: 1.5rem;
+}
 /** Footer **/
