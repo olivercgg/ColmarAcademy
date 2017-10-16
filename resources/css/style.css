@@ -87,6 +87,21 @@ nav li {
   padding-left: 1rem;
 }
 
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+}
+
 /** Introduction Banner **/
 .intro {
   position: relative;
