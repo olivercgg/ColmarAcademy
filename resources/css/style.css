@@ -159,7 +159,7 @@ header .mobile {
   border-right: 1px solid rgba(166, 166, 166, 0.7);
 }
 
-.detail {
+.info .detail {
   border: 1px solid rgba(166, 166, 166, 0.7);
 }
 .left-column .text {
@@ -181,6 +181,15 @@ header .mobile {
 
 .detail .mobile {
   display: none;
+}
+
+.detail:hover {
+  background-color: rgba(199, 199, 199, 0.7);
+  transition: background-color 0.2s linear;
+}
+
+.detail a {
+
 }
 
 @media only screen and (max-width: 500px) {
