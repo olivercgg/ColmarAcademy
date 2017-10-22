@@ -193,16 +193,12 @@ header .mobile {
 }
 
 @media only screen and (max-width: 500px) {
-  .detail .desktop {
+  .info .desktop {
     display: none;
   }
 
   .detail .mobile {
     display: block;
-  }
-
-  .info .left-column {
-    display: none;
   }
 
   .info .right-column {
@@ -211,8 +207,7 @@ header .mobile {
   }
 
   .info .right-column,
-  .info img,
-  .info .text {
+  .info img {
     width: 100%;
   }
 
@@ -221,14 +216,11 @@ header .mobile {
     max-width: 100%;
   }
 
-  .info .text {
-    padding: 1rem;
-  }
-
   .info .detail {
     flex-direction: column;
     padding: 1rem;
     border: 0px;
+    align-items: flex-start;
   }
 }
 /** Course Section **/
