@@ -57,6 +57,11 @@ img, video {
   align-items: flex-start;
 }
 
+@media only screen and (min-width: 501px) {
+  body, header {
+    min-width: 870px;
+  }
+}
 
 @media only screen and (max-width: 500px) {
   .left-column {
@@ -125,11 +130,14 @@ header .mobile {
 
 .intro .right-column .button {
   background-color: rgb(127, 127, 127);
-  color: white;
   width: 100%;
   text-align: center;
   margin-top: 0.75rem;
   padding: 0.5rem 0 0.5rem 0;
+}
+
+.intro a {
+  color: white;
 }
 
 .intro h3 {
@@ -161,6 +169,7 @@ header .mobile {
 
 .info .detail {
   border: 1px solid rgba(166, 166, 166, 0.7);
+  border-left: 0px;
 }
 .left-column .text {
   padding: 2rem 0 0 0;
@@ -236,7 +245,6 @@ header .mobile {
 .course-section .desktop {
   padding: 1rem 3.5rem;
   justify-content: space-between;
-  min-width: 750px;
   flex: 1;
   flex-wrap: wrap;
 }
@@ -282,9 +290,14 @@ header .mobile {
   .course-section .mobile div {
     padding: 1rem 1rem 1.5rem 1rem;
     margin-bottom: 1rem;
-    background-color: rgba(222, 222, 222, 0.8);
+    background-color: rgba(222, 222, 222, 0.75);
     font-weight: bold;
     font-size: 1.25rem;
+  }
+
+  .course-section .mobile div:hover {
+    background-color: rgba(200, 200, 200, 0.85);
+    transition: background-color 0.2s linear;
   }
 }
 /** Thesis Section
