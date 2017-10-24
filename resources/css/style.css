@@ -14,12 +14,13 @@ body {
   align-items: center;
 }
 
-h1, h2, h3 {
+h1, h2, h3, .bold {
   font-weight: bold;
+  color: rgba(22, 22, 22, 0.8);
 }
 
-h2 {
-  font-size: 2rem;
+h1, h2 {
+  font-size: 2.5rem;
   padding-bottom: 1.5rem;
   line-height: 2.5rem;
 }
@@ -31,6 +32,11 @@ h3 {
 h3, p {
   padding-bottom: 0.75rem;
   line-height: 1.25rem;
+}
+
+p, span, .light, footer a {
+  color: rgba(22, 22, 22, 0.6);
+  font-weight: 500;
 }
 
 img, video {
@@ -129,7 +135,7 @@ header .mobile {
 }
 
 .intro .right-column .button {
-  background-color: rgb(127, 127, 127);
+  background-color: rgb(77, 77, 77);
   width: 100%;
   text-align: center;
   margin-top: 0.75rem;
@@ -167,6 +173,10 @@ header .mobile {
   border-right: 1px solid rgba(166, 166, 166, 0.7);
 }
 
+.info h1 {
+  font-size: 1.75rem;
+}
+
 .info .detail {
   border: 1px solid rgba(166, 166, 166, 0.7);
   border-left: 0px;
@@ -198,7 +208,7 @@ header .mobile {
 }
 
 .detail a {
-
+  color: rgba(73, 81, 255, 0.7);
 }
 
 @media only screen and (max-width: 500px) {
