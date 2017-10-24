@@ -14,7 +14,7 @@ body {
   align-items: center;
 }
 
-h1, h2, h3, .bold {
+h1, h2, h3, div, .bold, header a {
   font-weight: bold;
   color: rgba(22, 22, 22, 0.8);
 }
@@ -34,7 +34,7 @@ h3, p {
   line-height: 1.25rem;
 }
 
-p, span, .light, footer a {
+p, span, .light, footer a, footer div {
   color: rgba(22, 22, 22, 0.6);
   font-weight: 500;
 }
@@ -140,6 +140,7 @@ header .mobile {
   text-align: center;
   margin-top: 0.75rem;
   padding: 0.5rem 0 0.5rem 0;
+  color: white;
 }
 
 .intro a {
@@ -261,7 +262,7 @@ header .mobile {
 
 .course {
   width: 29%;
-  max-height: 20rem;
+  height: 20rem;
   margin: 1rem;
   background-color: rgb(255, 255, 255);
 }
@@ -281,6 +282,11 @@ header .mobile {
   display: none;
 }
 
+@media only screen and (min-width: 501px) and (max-width: 930px) {
+  .course-section .desktop {
+    justify-content: space-around;
+  }
+}
 
 @media only screen and (max-width: 500px) {
   .course-section {
